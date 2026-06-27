@@ -10,7 +10,8 @@ LED Board SVG is a small web tool for generating scrolling LED-style signboards 
 4. Paste it into your README, profile, or any other Markdown-supported document.
 
 [Site](https://led-borad-svg.vercel.app/)
-[Demo](https://github.com/yabuki-shodai)
+
+[Developer](https://github.com/yabuki-shodai/)
 
 ## Example
 
