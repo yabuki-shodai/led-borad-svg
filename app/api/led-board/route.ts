@@ -1,4 +1,4 @@
-import { createLedBoardSvg } from "@/app/lib/led-board-svg";
+import { createLedBoardSvg, LedBoardBackground, LedBoardColor } from "@/app/lib/led-board-svg";
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
@@ -6,6 +6,8 @@ export async function GET(request: Request) {
   const svg = createLedBoardSvg({
     text: searchParams.get("text") ?? undefined,
     duration: durationParam ? Number(durationParam) : undefined,
+    color: searchParams.get("color") as LedBoardColor | undefined,
+    bg: searchParams.get("bg") as LedBoardBackground | undefined,
     title: searchParams.get("title") ?? undefined,
   });
 
